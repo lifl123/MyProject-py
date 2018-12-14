@@ -1,0 +1,11 @@
+from selenium import webdriver
+from time import sleep
+
+#a标签的为链接
+
+url = "https://www.baidu.com"
+dr = webdriver.Firefox()
+dr.get(url)
+dr.find_element_by_id("").click()
+sleep(2)
+dr.quit()
